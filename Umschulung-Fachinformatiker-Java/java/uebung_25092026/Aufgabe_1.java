@@ -8,8 +8,9 @@ public class Aufgabe_1
         int monat = 0;
         int betrag = 0;
 
-        for (monat = 0; betrag <=2000; betrag += rate) {
+        for (int i = 0; betrag <2000; i++ ) {
             monat += 1;
+            betrag += rate;
             System.out.println("Monat: " + monat + " ; " + betrag);
             if ( monat % 6 == 0){
                 betrag += bonus;
