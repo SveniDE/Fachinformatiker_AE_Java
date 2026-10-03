@@ -14,11 +14,11 @@ public class KaffeeMaschine {
         this.gekochteTassen = 0;
     }
     //getter
-    public String getwasserstand() {
-        return this.wasserstand + " ml";
+    public int getwasserstand() {
+        return this.wasserstand ;
     }
-    public String getbohnenStand() {
-        return this.bohnenStand + " g";
+    public int getbohnenStand() {
+        return this.bohnenStand;
     }
     public int getgekochteTassen() {
         return this.gekochteTassen;

@@ -4,20 +4,20 @@ public class Aufgabe_3 {
 
        String[] tage = {"Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"};
        int[] umsatz = {420, 385, 510, 298, 610, 875, 720};
-        int umsatzzwischensumme = 0;
+        double umsatzzwischensumme = 0;
 
        for(int i = 0 ; i < tage.length; i++){
         umsatzzwischensumme += umsatz[i];
         System.out.println(tage[i] + " : " + umsatz[i] + " Euro");
         System.out.println("Zwischensumme: " + umsatzzwischensumme + " Euro");
         }
-        int gesamtumsatz = umsatzzwischensumme;
+        double gesamtumsatz = umsatzzwischensumme;
     System.out.println("-----------------------------------------------------");
     System.out.println("Der Wochenumsatz beträgt: " + gesamtumsatz + " Euro");  
     System.out.println("-----------------------------------------------------");
 
     double durchschnittTagesumsatz = gesamtumsatz / umsatz.length;
-    System.out.println("Der durchschnittliche Tagesumsatz beträgt: " + durchschnittTagesumsatz + " Euro");
+    System.out.println("Der durchschnittliche Tagesumsatz beträgt: " + "%.2f%n" durchschnittTagesumsatz + " Euro");
     System.out.println("-----------------------------------------------------");        
 
         System.out.println("-----------------------------------------------------");        
